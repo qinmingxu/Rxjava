@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 .subscribe(new Consumer<Databean>() {
                     @Override
                     public void accept(Databean databean) throws Exception {
+
                         Toast.makeText(MainActivity.this,databean.getMsg(),Toast.LENGTH_SHORT).show();
 
                     }
